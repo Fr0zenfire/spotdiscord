@@ -1,7 +1,7 @@
 var DiscordClient = require('discord.io');
 
 // configuration shit
-require("./lib/config/bot.js");
+require("./lib/config/secrets.js");
 
 var reu = new DiscordClient(clientSettings);
 

@@ -34,4 +34,4 @@ node_modules
 
 # Reu specific
 tenc
-lib/config/bot.js
+lib/config/secrets.js
