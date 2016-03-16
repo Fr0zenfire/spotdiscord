@@ -8,12 +8,13 @@
     "url": "git://github.com/neko/reu.git"
   },
   "dependencies": {
-    "discord.io": "^1.6.2"
+    "discord.js": "^6.0.x",
+    "knuth-shuffle": "^1.0.1",
+    "spotify-web": "git+https://github.com/mattyway/node-spotify-web.git",
+    "spotify-web-api-node": "^2.2.0",
+    "express": "^4.13.3"
   },
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "senpai",
   "license": "ISC"
 }

@@ -1,0 +1,20 @@
+{
+  "discord" : {
+    "email" : "username@email.com",
+    "password" : "password",
+    "music_channel" : "141689142948123456",
+    "announcement_channel" : "141689142948123456"
+  },
+  "spotify" : {
+    "username" : "username",
+    "password" : "password",
+    "playlist" : "5ppXhstyyYIQzUjX2lZ9QY",
+    "api" : {
+      "clientId" : "YOUR ID",
+      "clientSecret" : "YOUR SECRET KEY",
+      "redirectUri" : "http://localhost:6969/callback",
+      "code" : "YOUR AUTH CODE"
+    }
+  }
+
+}
