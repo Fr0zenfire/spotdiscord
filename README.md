@@ -12,8 +12,14 @@ it's really easy, just follow these steps:
 
 that's basically it for now
 
-### but neko y can't i request songs it say it broked?!
+#### but neko y can't i request songs it say it broked?!
 ye, because of spotify's api the bot has to get some permissions through a method that's as enjoyable as eating a pinecone, but don't worry about that for now because i'll be pushing some nice code that makes it so i can do that without having to worry about permissions soon.
 
 ### how 2 contribute
 just submit pull requests or whatever
+
+### how 2 contact
+idk why you'd need to contact me here:
+**Twitter:** @tastyneko
+**Email:** neko@pomf.is
+**Lewd.sx:** https://lewd.sx/u/senpai
