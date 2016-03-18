@@ -10,7 +10,7 @@
   "dependencies": {
     "discord.js": "^6.0.x",
     "knuth-shuffle": "^1.0.1",
-    "spotify-web": "git+https://github.com/mattyway/node-spotify-web.git",
+    "spotify-web": "git+https://github.com/neko/node-spotify-web.git",
     "spotify-web-api-node": "^2.2.0",
     "express": "^4.13.3"
   },
