@@ -97,7 +97,7 @@ function play_track(spotify, playlist, uri) {
     // play() returns a readable stream of MP3 audio data
     stream = track.play()
     .on('finish', function () {
-      if(playlist.length != 0) {
+      if(playlist.length !== 0) {
         play_track(spotify, playlist, playlist.pop());
       } else {
         get_playlist(function (playlist) {
@@ -115,15 +115,27 @@ function get_playlist(callback) {
 
   spotifyApi.getPlaylist(config.spotify.username, config.spotify.playlist)
   .then(function(data) {
-    tracks = data.body.tracks.items
 
-    shuffle(tracks);
+    total = data.body.tracks.total - 100
+    offset = Math.floor(Math.random()*(total+1))
 
-    tracks.forEach(function (element, index, array) {
-      playlist.push(element.track.uri)
-    });
 
-    if(callback) callback(playlist);
+    // Get tracks in a playlist
+    spotifyApi.getPlaylistTracks(config.spotify.username, config.spotify.playlist, { 'offset' : offset })
+      .then(function(data) {
+        //console.log('The playlist contains these tracks', data.body);
+        tracks = data.body.items
+
+        shuffle(tracks);
+
+        tracks.forEach(function (element, index, array) {
+          playlist.push(element.track.uri)
+        });
+
+        if(callback) callback(playlist);
+      }, function(err) {
+        console.log('Something went wrong!', err);
+      });
   }, function(err) {
     console.log('Something went wrong!', err);
   });
