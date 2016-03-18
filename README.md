@@ -5,9 +5,13 @@ uh, basically, this is a really half assed bot that plays music from a spotify p
 
 ### how 2 install
 it's really easy, just follow these steps:
+
 1. clone the repo
+
 2. `cd` into the folder
+
 3. run `npm install` (make sure you append `--unsafe-perm` to the end if you're installing the bot as the root user on your server)
+
 4. copy `config.example.json` to `config.json` and edit it with your details
 
 that's basically it for now
@@ -20,6 +24,9 @@ just submit pull requests or whatever
 
 ### how 2 contact
 idk why you'd need to contact me here:
+
 **Twitter:** @tastyneko
+
 **Email:** neko@pomf.is
+
 **Lewd.sx:** https://lewd.sx/u/senpai
